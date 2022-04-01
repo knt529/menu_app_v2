@@ -1,0 +1,42 @@
+.inputForm {
+  padding: 9px 3px;
+  font-size: 15px;
+}
+.submit{
+  margin-left: 10px;
+  padding: 8px 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 321px) and (max-width: 1100px){
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 880px){
+  .inputForm {
+    padding: 7px 1px;
+    font-size: 15px;
+  }
+  .submit{
+    margin-left: 8px;
+    padding: 5px 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 450px){
+  .form {
+    position: relative;
+    top: -10px;
+  }
+  .inputForm {
+    padding: 4px 1px;
+    font-size: 12px;
+  }
+  .submit{
+    margin-left: 8px;
+    padding: 3px 8px;
+    font-size: 12px;
+  }
+}

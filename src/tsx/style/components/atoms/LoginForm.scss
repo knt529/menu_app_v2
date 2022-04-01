@@ -1,0 +1,165 @@
+.formContainer {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+  width: 100%;
+}
+
+.formContainer h1 {
+  text-align: center;
+  margin: 13px 0;
+}
+
+.formContainer form {
+  width: 70%;
+  max-width: 450px;
+  border: 1px solid #dfefef;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #f7f4f4;
+  box-shadow: 2px 12px 17px -7px #383838;
+  border-radius: 15px;
+}
+
+.uiForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 500px;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formField input {
+  border: 1px solid grey;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.formField input:focus {
+  outline: none;
+}
+
+.formField label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.submitButton {
+  background: #0563b4;
+  width: 100%;
+  margin-top: 0;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #0e528d;
+}
+
+.errorMsg {
+  color: red;
+  margin: 0;
+  align-self: flex-start;
+}
+.uiForm p{
+  font-size: 14px;
+  margin: 0;
+}
+.msgOk {
+  color: green;
+  margin-top: 15px;
+}
+
+@media screen and (min-width: 321px) and (max-width: 450px){
+  .formContainer {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 100%;
+  }
+  
+  .formContainer h1 {
+    text-align: center;
+    margin: 13px 0;
+    font-size: 20px;
+  }
+  
+  .formContainer form {
+    width: 70%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 12px 17px -7px #383838;
+    border-radius: 15px;
+  }
+  
+  .uiForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 380px;
+  }
+  
+  .formField {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .formField input {
+    border: 1px solid grey;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  
+  .formField input:focus {
+    outline: none;
+  }
+  
+  .formField label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+  
+  .submitButton {
+    margin-top: 3px;
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+  
+  .submitButton:hover {
+    background-color: #0e528d;
+  }
+  
+  .errorMsg {
+    color: red;
+    margin: 0;
+    align-self: flex-start;
+  }
+  .uiForm p{
+    font-size: 11px;
+    padding: 0;
+  }
+  .msgOk {
+    color: green;
+    margin-top: 15px;
+  }
+}
