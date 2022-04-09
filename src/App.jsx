@@ -6,7 +6,7 @@ import Login from './tsx/views/Auth/Login';
 import PrivateRoute from './tsx/views/Auth/PrivateRoute';
 import PublicRoute from './tsx/views/Auth/PublicRoute';
 import SignUp from './tsx/views/Auth/SignUp';
-import { AuthProvider } from './tsx/context/AuthContext';
+import { AuthProvider } from './tsx/views/context/AuthContext';
 
 function App() {
   return (
@@ -15,11 +15,11 @@ function App() {
      <BrowserRouter>
       <Fragment>
         <Routes>
-          <Route exact path='/' element={<Home/>}/>
+          <Route exact path='/' element={<Login/>}/>
 
           <Route exact path='/signup' element={<SignUp/>}/>
 
-          <Route exact path='/login' element={<Login/>}/>
+          <Route exact path='/home' element={<Home/>}/>
 
         </Routes>
       </Fragment>

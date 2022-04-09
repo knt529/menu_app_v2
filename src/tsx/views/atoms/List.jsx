@@ -7,10 +7,12 @@ class List extends React.Component {
     const list = memos.map(memo => {
       return (
         <div className="memo">
-         <li id="menuMon">
+         <li>
            {memo.content}{" "}
-           <button onClick={() => deleteMemo(memo.id)} className="delete">
-           <i className="fa-solid fa-trash-can"></i>
+           <button 
+           onClick={() => deleteMemo(memo.id)} className="delete"
+           >
+           <i className="fa-solid fa-trash-can delete-icon"></i>
            </button>
          </li>
         </div>

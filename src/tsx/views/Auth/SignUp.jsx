@@ -14,7 +14,7 @@ function LoginForm(props) {
     const { email, password } = event.target.elements;
     try {
       await auth.createUserWithEmailAndPassword(email.value, password.value);
-      navigate('/');
+      navigate('/home');
     } catch (error) {
       setError("ユーザー登録に失敗しました");
     }
@@ -102,7 +102,7 @@ function LoginForm(props) {
           <button className="submitButton">登録</button>
           {error && <p style={{ color: 'red' }}>{error}</p>}
           <div>
-          ユーザ登録済の場合は<Link to={'/login'}>こちら</Link>から
+          ユーザ登録済の場合は<Link to={'/'}>こちら</Link>から
         </div>
         </div>
         <div>{props.content}</div>

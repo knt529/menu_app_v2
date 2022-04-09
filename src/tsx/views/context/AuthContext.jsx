@@ -1,5 +1,7 @@
 import { createContext, useState, useContext, useEffect } from 'react';
-import { auth } from '../../firebase';
+import { auth } from '../../../firebase';
+
+import "../../style/components/atoms/Loading.scss"
 
 
 const AuthContext = createContext();
@@ -29,7 +31,12 @@ export function AuthProvider({ children }) {
   }, []);
 
   if (loading) {
-    return <p>loading...</p>;
+    return (
+     <div className='loading'>
+       <p>loading...</p>
+     </div>
+    )
+    
   } else {
     return (
       <AuthContext.Provider value={value}>

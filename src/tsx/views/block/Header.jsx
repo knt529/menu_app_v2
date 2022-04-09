@@ -8,7 +8,7 @@ function Header(){
   let signOut = () => {
     if(window.confirm('サインアウトしますか？')) {
       auth.signOut();
-      navigate('/login');
+      navigate('/');
      } 
   }
 

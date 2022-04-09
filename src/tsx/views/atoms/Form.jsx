@@ -9,13 +9,23 @@ class Form extends React.Component {
     this.state = { content: "" };
   }
 
+
+
   render() {
     return (
       <div className="Form">
         <h2 className="menu_title"></h2>
         <form className="form" onSubmit={this.hamdleSubmit}>
-          <input className="inputForm" value={this.state.content} onChange={this.handleChange} required/>
-          <input type="submit" value="追加" className="submit" />
+          <input 
+          className="inputForm" 
+          value={this.state.content} 
+          onChange={this.handleChange} 
+          required/>
+
+          <input 
+          type="submit" 
+          value="追加" 
+          className="submit" />
         </form>
       </div>
     );

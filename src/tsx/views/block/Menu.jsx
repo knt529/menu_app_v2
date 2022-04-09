@@ -1,12 +1,13 @@
 import Button from '../atoms/Button';
 
 import '../../style/components/block/Menu.scss'
+import { memo } from 'react';
 
 function Menu() {
   function create(){
     let menu = ['にくじゃが','から揚げ','ビビンバ','カレー','パスタ','うどん','ラーメン'];
     const randomMenu = menu[Math.floor(Math.random() * menu.length)];
-    document.getElementById('menuMon').textContent = randomMenu;
+    memo.content = randomMenu
   }
   
   let randomConfirm = () => {

@@ -1,5 +1,5 @@
 import { Route, Navigate, Outlet } from 'react-router-dom';
-import { useAuthContext } from '../../context/AuthContext';
+import { useAuthContext } from '../context/AuthContext';
 
 const PublicRoute = ({ element: Element, ...rest }) => {
   const { user } = useAuthContext();

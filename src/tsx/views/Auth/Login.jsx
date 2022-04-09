@@ -17,7 +17,7 @@ function LoginForm(props) {
     setIsSubmit(true);
     try {
       await auth.signInWithEmailAndPassword(email.value, password.value);
-      navigate('/');
+      navigate('/home');
     } catch (error) {
       console.log(error.message)
       setError("ログインに失敗しました");
