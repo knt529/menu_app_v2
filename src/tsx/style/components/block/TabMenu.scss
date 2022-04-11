@@ -1,5 +1,5 @@
 .Tabs{
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
 }
 .TabList {
@@ -14,7 +14,7 @@
 }
 
 .TabPanel {
-  height: 500px;
+  height: 556px;
   margin: 0 10px;
   border: 1px solid #aaa;
   border-top: none;
@@ -24,7 +24,7 @@
   display: flex;
 }
 
-@media screen and (min-width: 321px) and (max-width: 1300px){
+@media screen and (min-width: 321px) and (max-width: 1450px){
   .Tabs{
     width: 90%;
   }
@@ -37,7 +37,7 @@
 
 @media screen and (min-width: 321px) and (max-width: 880px){
   .Tabs{
-    width: 90%;
+    width: 75%;
   }
   .TabList{
     font-size: 1px;
@@ -49,7 +49,7 @@
     margin: 3px 5px 0 10px;
   }
   .TabPanel {
-    height: 40rem;
+    height: 46rem;
     margin: 0 5px;
     margin-bottom: 40px;
     padding: 0;
@@ -58,6 +58,12 @@
     display: block;
   }
   
+}
+
+@media screen and (min-width: 321px) and (max-width: 800px){
+ .Tabs{
+   width: 90%;
+ }
 }
 
 @media screen and (min-width: 321px) and (max-width: 450px){
@@ -75,7 +81,7 @@
     margin: 0 0 0 4px;
   }
   .TabPanel {
-    height: 30rem;
+    height: 32rem;
     margin: 0 5px;
     margin-bottom: 40px;
     padding: 0;

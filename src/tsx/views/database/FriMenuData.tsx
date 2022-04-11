@@ -102,10 +102,12 @@ function FriMenuData() {
             </TableRow>
       {taskList.map((user, index) => (
         <>
-        <TableRow key={index.toString()}>
+        <TableRow key={index.toString()} >
           <TableCell>
             <Typography id={`taskText${index.toString()}`}>
+            <div className='list'>
               {user.taskText}
+            </div>
             </Typography>
           </TableCell>
           <TableCell>

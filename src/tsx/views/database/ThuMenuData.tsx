@@ -105,7 +105,9 @@ function ThuMenuData() {
         <TableRow key={index.toString()}>
           <TableCell>
             <Typography id={`taskText${index.toString()}`}>
+            <div className='list'>
               {user.taskText}
+            </div>
             </Typography>
           </TableCell>
           <TableCell>

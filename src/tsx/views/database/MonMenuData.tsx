@@ -10,6 +10,7 @@ import {
   TableRow,
   TableCell,
 } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles'
 import CommonDialog from '../atoms/CommonDialog';
 
 
@@ -71,6 +72,7 @@ function MonMenuData() {
     dispData();
   };
 
+  
 
   // 初期処理
   useEffect(() => {
@@ -102,10 +104,12 @@ function MonMenuData() {
             </TableRow>
       {taskList.map((user, index) => (
         <>
-        <TableRow key={index.toString()}>
+        <TableRow key={index.toString()} >
           <TableCell>
             <Typography id={`taskText${index.toString()}`}>
+              <div className='list'>
               {user.taskText}
+              </div>
             </Typography>
           </TableCell>
           <TableCell>

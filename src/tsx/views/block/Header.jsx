@@ -17,7 +17,7 @@ function Header(){
     <header className="site-header">
      <div className="wrapper site-header__wrapper">
        <a href="#" className="brand">
-         <h1>献立作成アプリ</h1>
+         <h1>献立メモアプリ</h1>
        </a>
        <nav className="nav">
          <ul className="nav__wrapper">

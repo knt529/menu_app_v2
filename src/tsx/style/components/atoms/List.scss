@@ -4,31 +4,18 @@
   flex-direction: column;
   width: 100%;
 }
-.list li{
-  margin-bottom: 15px;
-}
-.list li{
+
+.list{
   float:left;
   padding-right: 2px;
-  margin: 0 0 20px 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   width: 200px;
 }
 .memo{
   width:180px;
   padding-left: 20px;
 }
-.list {
-  margin: 0;
-  padding-top: 5px;
-  width: 100%;
-}
-.list ul{
-  padding: 0 0 0 20px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
+
 .delete {
   height: 20px;
   padding: 0;
@@ -40,9 +27,13 @@
   font-size: 25px;
   color: rgba(57, 58, 59, 0.911);
 }
+
+.test{
+  padding: 10px;
+}
+
 @media screen and (min-width: 321px) and (max-width: 1100px){
-  .list li{
-    margin: 0 0 13px 0;
+  .list{
     font-size: 25px;
   }
   .delete {
@@ -59,21 +50,20 @@
   .memo{
     width:100px;
   }
-  .list {
-    font-size: 5px;
-    margin: 0;
-    width: 100%;
-    padding: 0;
-  }
-  .list ul{
-    margin-top: 12px;
-    padding: 0 0 0 30px;
-    width: 100%;
-    height: 220px;
-  }
-  .list li{
-    margin: 0 0 13px 0;
-    font-size: 25px;
+  // .list {
+  //   font-size: 5px;
+  //   margin: 0;
+  //   width: 100%;
+  //   padding: 0;
+  // }
+  // .list ul{
+  //   margin-top: 12px;
+  //   padding: 0 0 0 30px;
+  //   width: 100%;
+  //   height: 220px;
+  // }
+  .list{
+    font-size: 20px;
   }
   .delete {
     height: 30px;
@@ -83,10 +73,9 @@
 
 @media screen and (min-width: 321px) and (max-width: 450px){
   .list {
-    font-size: 5px;
+    font-size: 18px;
     margin: 0;
     width: 100%;
-    height: 40px;
     display: flex;
   }
   .list ul{
@@ -95,14 +84,11 @@
     width: 100%;
     height: 10px;
   }
-  .list li{
-    margin: 0 0 13px 0;
-    font-size: 18px;
-    width: 200px;
-    padding: 1px;
-  }
 
   .delete-icon{
     font-size: 15px;
+  }
+  .MenuRow{
+    padding: 0;
   }
 }
