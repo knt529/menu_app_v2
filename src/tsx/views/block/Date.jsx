@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import '../../style/components/block/Date.scss'
+
+
 function Date(){
-  const [date, setDate] = useState("")
+  const [date, setDate] = useState("");
+  
   const doChangeDate = (e)=> {
     setDate(e.target.value)
   }

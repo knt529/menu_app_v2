@@ -92,14 +92,12 @@ function MonMenuData() {
                   value={taskText}
                   onChange={(e) => {setTaskText(e.target.value)}}
                 />
-                </form>
-              </TableCell>
-              <TableCell>
-                <button
+                <input
                   className='submit'
-                  onClick={() => addTask(taskText)}>
-                    追加
-                </button>
+                  type="submit"
+                  value="追加"
+                  onClick={() => addTask(taskText)}/>
+                </form>
               </TableCell>
             </TableRow>
       {taskList.map((user, index) => (
