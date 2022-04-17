@@ -107,12 +107,14 @@ function SatLackData() {
               {user.taskText}
             </div>
             </Typography>
+            <div className='delete'>
             <Button
               variant="outlined"
               onClick={() => deleteTaskConfirm(user.docId)}
             >
               <i className="fa-solid fa-trash-can"></i>
             </Button>
+            </div>
           </TableCell>
         </TableRow>
         <CommonDialog
