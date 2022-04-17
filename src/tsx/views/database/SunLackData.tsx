@@ -101,14 +101,12 @@ function SunLackData() {
       {taskList.map((user, index) => (
         <>
         <TableRow key={index.toString()}>
-          <TableCell>
+        <TableCell>
             <Typography id={`taskText${index.toString()}`}>
             <div className='list'>
               {user.taskText}
             </div>
             </Typography>
-          </TableCell>
-          <TableCell>
             <Button
               variant="outlined"
               onClick={() => deleteTaskConfirm(user.docId)}

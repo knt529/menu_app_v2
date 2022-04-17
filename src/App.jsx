@@ -15,7 +15,7 @@ function App() {
      <BrowserRouter>
       <Fragment>
         <Routes>
-          <Route exact path='/' element={<Login/>}/>
+          <Route exact path='/menu_app_v2' element={<Login/>}/>
 
           <Route exact path='/signup' element={<SignUp/>}/>
 

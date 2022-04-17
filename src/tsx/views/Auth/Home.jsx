@@ -7,8 +7,7 @@ const Home = () => {
     return (
       <div>
         <Header/>
-        <Date/>
-       
+        <Date/>     
         <TabMenu/>
       </div>
     );

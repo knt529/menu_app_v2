@@ -10,7 +10,6 @@ import {
   TableRow,
   TableCell,
 } from '@material-ui/core'
-import { makeStyles } from '@material-ui/core/styles'
 import CommonDialog from '../atoms/CommonDialog';
 
 
@@ -72,7 +71,6 @@ function MonMenuData() {
     dispData();
   };
 
-  
 
   // 初期処理
   useEffect(() => {
@@ -85,7 +83,7 @@ function MonMenuData() {
       <Table>      
           <TableBody>
             <TableRow>
-              <TableCell>
+            <TableCell>
                 <form>
                 <input
                   className='inputForm'
@@ -105,19 +103,17 @@ function MonMenuData() {
         <TableRow key={index.toString()} >
           <TableCell>
             <Typography id={`taskText${index.toString()}`}>
-              <div className='list'>
+            <div className='list'>
               {user.taskText}
-              </div>
+            </div>
             </Typography>
-          </TableCell>
-          <TableCell>
             <Button
               variant="outlined"
               onClick={() => deleteTaskConfirm(user.docId)}
             >
               <i className="fa-solid fa-trash-can"></i>
             </Button>
-          </TableCell>
+          </TableCell>    
         </TableRow>
         <CommonDialog
           msg="削除しますか？"
@@ -135,3 +131,5 @@ function MonMenuData() {
 }
 
 export default MonMenuData;
+
+  
