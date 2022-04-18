@@ -1,5 +1,6 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { auth } from "../../../firebase";
+
 
 import "../../style/components/block/Header.scss";
 import "../../style/components/atoms/Cop.scss"
@@ -23,13 +24,10 @@ function Header(){
        <nav className="nav">
          <ul className="nav__wrapper">
            <li className="nav__item">
-             <a href="#">使い方</a>
+           <a><Link to={'/contact'}>お問い合わせ</Link></a>
            </li>
            <li className="nav__item">
-             <a href="#">お問い合わせ</a>
-           </li>
-           <li className="nav__item">
-             <a href='#'>
+             <a>
                <button className='signOut' onClick={signOut}>
                サインアウト
               </button>
@@ -43,8 +41,7 @@ function Header(){
          <label htmlFor="cp_toggle01"><span></span></label>
          <div className="cp_menu">
          <ul>
-           <li><a href="#">使い方</a></li>
-           <li><a href="#">お問い合わせ</a></li>
+           <li><a><Link to={'/contact'}>お問い合わせ</Link></a></li>
            <li>
                <button className="signOut" onClick={signOut}>
                サインアウト

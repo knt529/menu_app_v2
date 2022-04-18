@@ -12,6 +12,7 @@ import {
 } from '@material-ui/core'
 import CommonDialog from '../atoms/CommonDialog';
 import { makeStyles } from '@material-ui/core/styles'
+import { TextField } from '@material-ui/core';
 
 
 type Task = {
@@ -85,19 +86,20 @@ function MonMenuData() {
           <TableBody>
             <TableRow>
               <div className='Form'>
-            <TableCell>
-                <form>
+              <TableCell>              
                 <input
-                  className='inputForm'
-                  value={taskText}
+                  value={taskText}  
+                  className='inputForm'      
                   onChange={(e) => {setTaskText(e.target.value)}}
                 />
+              </TableCell>
+              <TableCell>
                 <input
                   className='submit'
                   type="submit"
                   value="追加"
-                  onClick={() => addTask(taskText)}/>
-                </form>
+                  onClick={() => addTask(taskText)}
+                />
               </TableCell>
               </div>
             </TableRow>
