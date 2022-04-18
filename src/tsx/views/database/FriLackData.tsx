@@ -83,6 +83,7 @@ function FriLackData() {
       <Table>      
           <TableBody>
             <TableRow>
+            <div className='Form'>
             <TableCell>
                 <form>
                 <input
@@ -97,33 +98,34 @@ function FriLackData() {
                   onClick={() => addTask(taskText)}/>
                 </form>
               </TableCell>
+              </div>
             </TableRow>
       {taskList.map((user, index) => (
-        <>
-        <TableRow key={index.toString()}>
-        <TableCell>
-            <Typography id={`taskText${index.toString()}`}>
-            <div className='list'>
-              {user.taskText}
-            </div>
-            </Typography>
-            <div className='delete'>
-            <Button
-              variant="outlined"
-              onClick={() => deleteTaskConfirm(user.docId)}
-            >
-              <i className="fa-solid fa-trash-can"></i>
-            </Button>
-            </div>
-          </TableCell>
-        </TableRow>
-        <CommonDialog
-          msg="削除しますか？"
-          isOpen={isOpenDeleteConfirm}
-          doYes={deleteTask}
-          doNo={() => {setIsOpenDeleteConfirm(false)}}
-        />
-        </>
+       <div className='List'>
+       <TableRow key={index.toString()} >
+         <TableCell>
+           <Typography id={`taskText${index.toString()}`}>
+           <div className='list'>
+             {user.taskText}
+           </div>
+           </Typography>
+           <div className='delete'>
+           <Button
+             variant="outlined"
+             onClick={() => deleteTaskConfirm(user.docId)}
+           >
+             <i className="fa-solid fa-trash-can"></i>
+           </Button>
+           </div>
+         </TableCell>    
+       </TableRow>
+       <CommonDialog
+         msg="削除しますか？"
+         isOpen={isOpenDeleteConfirm}
+         doYes={deleteTask}
+         doNo={() => {setIsOpenDeleteConfirm(false)}}
+       />
+       </div>
       ))}
           </TableBody>
         </Table>

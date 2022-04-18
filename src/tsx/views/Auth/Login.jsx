@@ -111,7 +111,7 @@ function LoginForm(props) {
           <button className="submitButton">ログイン</button>
           {error && <p style={{ color: 'red' }}>{error}</p>}
           <div>
-          ユーザ登録は<Link to={'/signup'}>こちら</Link>から
+          ユーザ登録は<span className="link"><Link to={'/signup'}>こちら</Link></span>から
         </div>
         </div>
         <div>{props.content}</div>

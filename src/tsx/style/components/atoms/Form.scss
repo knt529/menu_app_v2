@@ -1,5 +1,10 @@
+.Form{
+  border: none;
+}
+
 form{
-  width: 350px;
+  width: 400px;
+  margin: 0;
 }
 
 .inputForm {
@@ -13,11 +18,21 @@ form{
   cursor: pointer;
 }
 
-
-@media screen and (min-width: 321px) and (max-width: 1100px){
-
+@media screen and (min-width: 321px) and (max-width: 1600px){
+  form{
+    width: 350px;
+  }
 }
-
+@media screen and (min-width: 321px) and (max-width: 1100px){
+ form{
+   width: 350px;
+ }
+}
+@media screen and (min-width: 321px) and (max-width: 1000px){
+  form{
+    width: 300px;
+  }
+}
 @media screen and (min-width: 321px) and (max-width: 880px){
   .inputForm {
     padding: 7px 1px;
@@ -28,11 +43,14 @@ form{
     padding: 5px 10px;
     font-size: 15px;
   }
+  form{
+    width: 400px;
+  }
 }
 
 @media screen and (min-width: 321px) and (max-width: 450px){
-  .form{
-    margin: 10px 0;
+  form{
+    width: 250px;
   }
   .inputForm {
     padding: 4px 1px;

@@ -83,6 +83,7 @@ function TueMenuData() {
       <Table>      
           <TableBody>
             <TableRow>
+            <div className='Form'>
             <TableCell>
                 <form>
                 <input
@@ -97,11 +98,12 @@ function TueMenuData() {
                   onClick={() => addTask(taskText)}/>
                 </form>
               </TableCell>
+              </div>
             </TableRow>
       {taskList.map((user, index) => (
-        <>
-        <TableRow key={index.toString()}>
-        <TableCell>
+        <div className='List'>
+        <TableRow key={index.toString()} >
+          <TableCell>
             <Typography id={`taskText${index.toString()}`}>
             <div className='list'>
               {user.taskText}
@@ -115,7 +117,7 @@ function TueMenuData() {
               <i className="fa-solid fa-trash-can"></i>
             </Button>
             </div>
-          </TableCell>
+          </TableCell>    
         </TableRow>
         <CommonDialog
           msg="削除しますか？"
@@ -123,7 +125,7 @@ function TueMenuData() {
           doYes={deleteTask}
           doNo={() => {setIsOpenDeleteConfirm(false)}}
         />
-        </>
+        </div>
       ))}
           </TableBody>
         </Table>

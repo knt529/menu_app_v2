@@ -1,14 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import { auth } from "../../../firebase";
 
-import "../../style/components/block/Header.scss"
+import "../../style/components/block/Header.scss";
+import "../../style/components/atoms/Cop.scss"
 
 function Header(){
   const navigate = useNavigate();
   let signOut = () => {
     if(window.confirm('サインアウトしますか？')) {
       auth.signOut();
-      navigate('/');
+      navigate('/menu_app_v2');
      } 
   }
 

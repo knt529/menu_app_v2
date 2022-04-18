@@ -11,6 +11,7 @@ import {
   TableCell,
 } from '@material-ui/core'
 import CommonDialog from '../atoms/CommonDialog';
+import { makeStyles } from '@material-ui/core/styles'
 
 
 type Task = {
@@ -83,6 +84,7 @@ function MonMenuData() {
       <Table>      
           <TableBody>
             <TableRow>
+              <div className='Form'>
             <TableCell>
                 <form>
                 <input
@@ -97,9 +99,10 @@ function MonMenuData() {
                   onClick={() => addTask(taskText)}/>
                 </form>
               </TableCell>
+              </div>
             </TableRow>
       {taskList.map((user, index) => (
-        <>
+        <div className='List'>
         <TableRow key={index.toString()} >
           <TableCell>
             <Typography id={`taskText${index.toString()}`}>
@@ -123,7 +126,7 @@ function MonMenuData() {
           doYes={deleteTask}
           doNo={() => {setIsOpenDeleteConfirm(false)}}
         />
-        </>
+        </div>
       ))}
           </TableBody>
         </Table>

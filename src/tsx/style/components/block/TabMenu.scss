@@ -1,5 +1,5 @@
 .Tabs{
-  width: 60%;
+  width: 62%;
   margin: 0 auto;
 }
 .TabList {
@@ -26,7 +26,7 @@
 
 @media screen and (min-width: 321px) and (max-width: 1450px){
   .Tabs{
-    width: 90%;
+    width: 70%;
   }
   .TabList li{
     font-size: 18px;
@@ -35,6 +35,11 @@
   }
 }
 
+@media screen and (min-width: 321px) and (max-width: 1250px){
+ .Tabs{
+   width: 90%;
+ }
+}
 @media screen and (min-width: 321px) and (max-width: 880px){
   .Tabs{
     width: 75%;
