@@ -54,7 +54,7 @@ class Contact extends React.Component {
             value='Submit'
             className="contactSubmit"
            >
-             Submit
+             送信
           </button>
         </form>
       );

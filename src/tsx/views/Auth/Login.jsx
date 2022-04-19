@@ -82,7 +82,7 @@ function LoginForm(props) {
     </div>
     <div className="formContainer">
       <form onSubmit={handleSubmit}>
-        <h1>ログインフォーム</h1>
+        <h1>ログイン</h1>
         <hr />
         <div className="uiForm">
           <div className="formField">

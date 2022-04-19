@@ -24,7 +24,7 @@ function Header(){
        <nav className="nav">
          <ul className="nav__wrapper">
            <li className="nav__item">
-           <a><Link to={'/contact'}>お問い合わせ</Link></a>
+           <a href="/contact"><Link to={'/contact'}>お問い合わせ</Link></a>
            </li>
            <li className="nav__item">
              <a>
@@ -41,7 +41,7 @@ function Header(){
          <label htmlFor="cp_toggle01"><span></span></label>
          <div className="cp_menu">
          <ul>
-           <li><a><Link to={'/contact'}>お問い合わせ</Link></a></li>
+           <li><a href="/contact">お問い合わせ</a></li>
            <li>
                <button className="signOut" onClick={signOut}>
                サインアウト

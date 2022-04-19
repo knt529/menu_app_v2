@@ -101,8 +101,8 @@ function LoginForm(props) {
           
           <button className="submitButton">登録</button>
           {error && <p style={{ color: 'red' }}>{error}</p>}
-          <div>
-          ユーザ登録済の場合は<span className="link"><Link to={'/menu_app_v2'}>こちら</Link></span>から
+          <div className="nav_login">
+          登録済の場合は<span className="link"><Link to={'/menu_app_v2'}>こちら</Link></span>から
         </div>
         </div>
         <div>{props.content}</div>

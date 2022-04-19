@@ -90,7 +90,7 @@
     /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 6rem;
     width: 100%;
   }
   
@@ -103,7 +103,7 @@
   .formContainer form {
     width: 70%;
     max-width: 450px;
-    padding: 30px;
+    padding: 30px ;
     border-radius: 10px;
     box-shadow: 2px 12px 17px -7px #383838;
     border-radius: 15px;
@@ -124,8 +124,9 @@
   }
   
   .formField input {
+    font-size: 17px;
     border: 1px solid grey;
-    padding: 10px 20px;
+    padding: 10px 12px;
     border-radius: 4px;
   }
   
@@ -162,4 +163,5 @@
     color: green;
     margin-top: 15px;
   }
+
 }
