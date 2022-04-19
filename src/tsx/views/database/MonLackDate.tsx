@@ -84,19 +84,20 @@ function MonLackData() {
           <TableBody>
             <TableRow>
             <div className='Form'>
-            <TableCell>
-                <form>
+              <TableCell>              
                 <input
-                  className='inputForm'
-                  value={taskText}
+                  value={taskText}  
+                  className='inputForm'      
                   onChange={(e) => {setTaskText(e.target.value)}}
                 />
+              </TableCell>
+              <TableCell>
                 <input
                   className='submit'
                   type="submit"
                   value="追加"
-                  onClick={() => addTask(taskText)}/>
-                </form>
+                  onClick={() => addTask(taskText)}
+                />
               </TableCell>
               </div>
             </TableRow>
