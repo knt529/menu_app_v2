@@ -9,9 +9,12 @@ import "../../style/components/atoms/LoginForm.scss"
 function LoginForm(props) {
   const navigate = useNavigate();
   const [error, setError] = useState('');
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const { email, password } = event.target.elements;
+    setFormErrors(validate(formValues));
+    setIsSubmit(true);
     try {
       await auth.createUserWithEmailAndPassword(email.value, password.value);
       navigate('/home');

@@ -86,7 +86,7 @@ function MonMenuData() {
           <TableBody>
             <TableRow>
               <div className='Form'>
-              <TableCell>              
+              <TableCell>            
                 <input
                   value={taskText}  
                   className='inputForm'      

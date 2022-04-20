@@ -79,7 +79,7 @@ function WedLackData() {
 
   return (
     <>
-    <TableContainer>
+     <TableContainer>
       <Table>      
           <TableBody>
             <TableRow>

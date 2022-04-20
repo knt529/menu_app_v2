@@ -66,7 +66,7 @@ function WedMenuData() {
   // 削除
   const deleteTask = async() => {
     setIsOpenDeleteConfirm(false);
-    const userDocumentRef = doc(db, 'wedMenu', deleteDocId);
+    const userDocumentRef = doc(db, 'WedMenu', deleteDocId);
     await deleteDoc(userDocumentRef);
     dispData();
   };
