@@ -11,6 +11,7 @@ import {
   TableCell,
 } from '@material-ui/core'
 import CommonDialog from '../atoms/CommonDialog';
+import { makeStyles } from '@material-ui/core/styles'
 
 
 type Task = {
@@ -76,6 +77,17 @@ function FriLackData() {
   useEffect(() => {
     dispData();
   }, []);
+  
+
+  const useStyles = makeStyles((theme) => ({
+    list: {
+      [theme.breakpoints.down('xs')]: {
+        padding: '10px',
+    },
+    },
+  }));
+
+  const classes = useStyles();
 
   return (
     <>
@@ -84,14 +96,14 @@ function FriLackData() {
           <TableBody>
             <TableRow>
             <div className='Form'>
-              <TableCell>              
+              <TableCell className={classes.list}>              
                 <input
                   value={taskText}  
                   className='inputForm'      
                   onChange={(e) => {setTaskText(e.target.value)}}
                 />
               </TableCell>
-              <TableCell>
+              <TableCell className={classes.list}>
                 <input
                   className='submit'
                   type="submit"
@@ -104,7 +116,7 @@ function FriLackData() {
       {taskList.map((user, index) => (
        <div className='List'>
        <TableRow key={index.toString()} >
-         <TableCell>
+         <TableCell className={classes.list}>
            <Typography id={`taskText${index.toString()}`}>
            <div className='list'>
              {user.taskText}
