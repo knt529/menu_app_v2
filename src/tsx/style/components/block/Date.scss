@@ -19,6 +19,7 @@
 input[type="date"] {
   font-size: 20px;
   padding: 5px ;
+  margin-right: 10px;
   text-align: center;
 }
 .dateSubmit{
@@ -31,16 +32,20 @@ input[type="date"] {
   justify-content: center;
 }
 .date-content h1{
-  font-size: 36px;
-  
+  font-size: 40px;
+  margin-right: 20px;
 }
-
+.dateTable{
+  width: 100%;
+  margin: 10px;
+}
 
 .dateDelete{
   display:inline-block;
-  font-size: 20px;
-  padding: 0px 10px;
- 
+  font-size: 18px;
+  margin-top: 40px;
+  padding: 0 10px;
+  height: 40px;
 }
 @media screen and (min-width: 321px) and (max-width: 1300px){
   .date{
@@ -54,6 +59,11 @@ input[type="date"] {
     margin-left: 60px;
   }
 }
+@media screen and (min-width: 321px) and (max-width: 1100px){
+ .dateDelete{
+   margin-top: 12px;
+ }
+}
 
 @media screen and (min-width: 321px) and (max-width: 880px){
   .date{
@@ -66,14 +76,13 @@ input[type="date"] {
     margin-left: 100px;
   }
   .date-edit input {
-    width: 140px;
+    width: 50px;
   }
-  .date-content h1{
-    margin: 2px 0 8px 0;
-  }
+
   input[type="date"] {
     width: 170px;
     font-size: 15px;
+    margin-right: 10px;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 800px){
@@ -95,6 +104,15 @@ input[type="date"] {
   }
   .date-content {
     margin-top:  12px;
+  }
+  .date-content h1{
+    font-size: 26px;
+    margin-right: 10px;
+  }
+  .dateDelete{
+    margin-top: 8px;
+    font-size: 13px;
+    height: 30px;
   }
   .date-edit{
     margin-left: 20px;

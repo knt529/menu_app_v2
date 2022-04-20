@@ -33,32 +33,32 @@ function TabMenu(){
 
       <div className="TabPanel">
         <TabPanel className="TabItem">
-          <PanelItem title="追加するメニュー" content={<MonMenuData/>}/>
-          <PanelItem title="不足している材料" content={<MonLackData/>}/>
+          <PanelItem title="メニュー" content={<MonMenuData/>}/>
+          <PanelItem title="材料" content={<MonLackData/>}/>
         </TabPanel>
         <TabPanel className="TabItem">
-          <PanelItem title="追加するメニュー" content={<TueMenuData/>}/>
-          <PanelItem title="不足している材料" content={<TueLackData/>}/>
+          <PanelItem title="メニュー" content={<TueMenuData/>}/>
+          <PanelItem title="材料" content={<TueLackData/>}/>
         </TabPanel>
         <TabPanel className="TabItem">
-          <PanelItem title="追加するメニュー" content={<WedMenuData/>}/>
-          <PanelItem title="不足している材料" content={<WedLackData/>}/>
+          <PanelItem title="メニュー" content={<WedMenuData/>}/>
+          <PanelItem title="材料" content={<WedLackData/>}/>
         </TabPanel>
         <TabPanel className="TabItem">
-          <PanelItem title="追加するメニュー" content={<ThuMenuData/>}/>
-          <PanelItem title="不足している材料" content={<ThuLackData/>}/>
+          <PanelItem title="メニュー" content={<ThuMenuData/>}/>
+          <PanelItem title="材料" content={<ThuLackData/>}/>
         </TabPanel>
         <TabPanel className="TabItem">
-          <PanelItem title="追加するメニュー" content={<FriMenuData/>}/>
-          <PanelItem title="不足している材料" content={<FriLackData/>}/>
+          <PanelItem title="メニュー" content={<FriMenuData/>}/>
+          <PanelItem title="材料" content={<FriLackData/>}/>
         </TabPanel>
         <TabPanel className="TabItem">
-          <PanelItem title="追加するメニュー" content={<SatMenuData/>}/>
-          <PanelItem title="不足している材料" content={<SatLackData/>}/>
+          <PanelItem title="メニュー" content={<SatMenuData/>}/>
+          <PanelItem title="材料" content={<SatLackData/>}/>
         </TabPanel>
         <TabPanel className="TabItem">
-          <PanelItem title="追加するメニュー" content={<SunMenuData/>}/>
-          <PanelItem title="不足している材料" content={<SunLackData/>}/>
+          <PanelItem title="メニュー" content={<SunMenuData/>}/>
+          <PanelItem title="材料" content={<SunLackData/>}/>
         </TabPanel>
       </div>
     </Tabs>

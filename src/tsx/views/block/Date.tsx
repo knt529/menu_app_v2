@@ -88,8 +88,8 @@ function Date(){
       </label>
       <div>
        {taskList.map((user, index) => (
-       <div className='test'>
-        <table key={index.toString()} >
+       <div>
+        <table key={index.toString()} className='dateTable'>
           <div>
           <div id={`date${index.toString()}`} className="date-content">
             <h1>
