@@ -9,12 +9,12 @@ form{
 
 .inputForm {
   padding: 9px 3px;
-  font-size: 15px;
+  font-size: 16px;
 }
 .submit{
   margin-left: 10px;
   padding: 8px 15px;
-  font-size: 15px;
+  font-size: 16px;
   cursor: pointer;
 }
 
@@ -36,12 +36,12 @@ form{
 @media screen and (min-width: 321px) and (max-width: 880px){
   .inputForm {
     padding: 7px 1px;
-    font-size: 15px;
+    font-size: 16px;
   }
   .submit{
     margin-left: 8px;
     padding: 5px 10px;
-    font-size: 15px;
+    font-size: 16px;
   }
   form{
     width: 400px;
@@ -54,12 +54,13 @@ form{
   }
   .inputForm {
     padding: 4px 1px;
-    font-size: 12px;
+    font-size: 16px;
+    width: 180px;
   }
   .submit{
     margin-left: 8px;
     padding: 3px 8px;
-    font-size: 12px;
+    font-size: 16px;
   }
   .cell{
     border: none;

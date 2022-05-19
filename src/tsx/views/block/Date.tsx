@@ -4,14 +4,6 @@ import { doc, getDocs, addDoc, collection, deleteDoc } from 'firebase/firestore'
 import '../../style/components/block/Date.scss'
 import CommonDialog from '../atoms/CommonDialog';
 
-import {
-  Typography,
-  TableContainer,
-  Table,
-  TableBody,
-  TableRow,
-  TableCell,
-} from '@material-ui/core'
 
 type Task = {
   docId: string;
